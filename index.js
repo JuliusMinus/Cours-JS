@@ -205,7 +205,7 @@ let interval = setInterval(() => {
   <h2>Nouvelle boite</h2>
   </div>
   `;
-}, 5000);
+}, 55000);
 
 // pour le stopper
 
@@ -220,3 +220,34 @@ document.body.addEventListener("click", (e) => {
 });
 
 // Location
+
+//console.log(location.href);
+//console.log(location.host);
+//console.log(location.pathname);
+//console.log(location.search);
+
+//location.replace("http://lequipe.fr");
+
+//window.onload = () => {
+//location.href = "http://twitter.fr";
+//};
+
+//Navigator
+
+//console.log(navigator.userAgent);
+
+// https://developer.mozilla.org/fr/docs/Web/API/Geolocalisation/getCurrentPosition
+
+// History
+
+//console.log(history);
+//window.history.back();
+// history.go(-2)
+
+//-----------------------------------------------------
+// SetProperty
+
+window.addEventListener("mousemove", (e) => {
+  nav.style.setProperty("--x", e.layerX + "px");
+  nav.style.setProperty("--y", e.layerY + "px");
+});
